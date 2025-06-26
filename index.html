@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasileirão - Acompanhe o Campeonato Brasileiro Série A</title>
+    <style>
+        :root {
+            --primary: #009c3b;
+            --secondary: #ffdf00;
+            --dark: #002776;
+            --light: #ffffff;
+            --gray: #f4f4f4;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: var(--light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--dark);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        
+        .features {
+            padding: 4rem 0;
+            background-color: var(--gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--dark);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: var(--light);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .screenshots {
+            padding: 4rem 0;
+        }
+        
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .screenshot {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .download {
+            padding: 4rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--dark), var(--primary));
+            color: var(--light);
+        }
+        
+        .download h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        footer {
+            background-color: #222;
+            color: var(--light);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin: 1rem 0;
+        }
+        
+        .footer-links a {
+            color: var(--light);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Brasileirão App</h2>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Acompanhe o Campeonato Brasileiro na palma da sua mão</h1>
+            <p>Tabela, Artilheiros, Partidas e muito mais no melhor aplicativo para torcedores do futebol brasileiro.</p>
+            <a href="#download" class="cta-button">Baixar Agora</a>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Recursos Principais</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Tabela Completa</h3>
+                    <p>Acompanhe em tempo real a classificação do Brasileirão com pontos, saldo de gols e desempenho dos times.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚽</div>
+                    <h3 class="feature-title">Artilheiros</h3>
+                    <p>Lista completa dos goleadores do campeonato com nome, time, número de gols e estatísticas detalhadas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Partidas</h3>
+                    <p>Visualize todas as partidas do campeonato com abertura direta na rodada atual e detalhes dos jogos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Interface Intuitiva</h3>
+                    <p>Design moderno e de fácil navegação para você se concentrar no que importa: o futebol.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">Capturas de Tela</h2>
+            <div class="screenshot-grid">
+                <!-- Aqui você adicionaria imagens do seu app -->
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/300x600?text=Tabela" alt="Tabela do Brasileirão">
+                </div>
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/300x600?text=Artilheiros" alt="Lista de Artilheiros">
+                </div>
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/300x600?text=Partidas" alt="Calendário de Partidas">
+                </div>
+                <div class="screenshot">
+                    <img src="https://via.placeholder.com/300x600?text=Time" alt="Detalhes do Time">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Baixe o App Brasileirão</h2>
+            <p>Disponível para Android na Google Play Store</p>
+            <a href="https://play.google.com/store/apps/details?id=com.msl.brasileirao" class="cta-button" style="margin-top: 20px;">
+                Baixar na Google Play
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Brasileirão App. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Política de Privacidade</a>
+                <a href="mailto:marsleite@gmail.com">Contato</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
